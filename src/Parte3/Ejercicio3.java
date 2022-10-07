@@ -28,13 +28,13 @@ public class Ejercicio3 {
                         ficheroEscribir.seek(pos - 2);
                         letraConNum2 = ficheroEscribir.readLine();
                         ficheroEscribir.seek(pos);
-                        ficheroEscribir.write(letraConNum2.getBytes());
+                        ficheroEscribir.writeChars(letraConNum2);
                         ficheroEscribir.write("\n".getBytes());
                     }
                     ficheroEscribir.seek(0);
                 }
                 //Escribe el carácter en el fichero de escritura
-                ficheroEscribir.write(letraConNum.getBytes());
+                ficheroEscribir.writeChars(letraConNum);
                 ficheroEscribir.write("\n".getBytes());
 
                 letraConNum = ficheroLeer.readLine();
